@@ -9,7 +9,7 @@ namespace Demo
     {
         static void Main(string[] args)
         {
-            string input = "  5          Welcome   User  @  ";
+            string input = "        Welcome   User  @  ";
             string pattern = @"(?<=^\s*)\s|\s(?=\s*$)";
             string replacement = "?";
 
@@ -21,7 +21,7 @@ namespace Demo
             
 
 
-            string s = "   Hi this is empty string. This should be in new line!   ", t = "";
+            string s = "   Hi this is empty string. This should be in new line.   ", t = "";
             int countSpaces = s.Count(Char.IsWhiteSpace);
             if (countSpaces > 3)
             {
@@ -51,7 +51,7 @@ namespace Demo
             Console.WriteLine(oo);
 
 
-            string k = "  5          Welcome   User  @     ";
+            string k = "    5      Welcome   User  @     ";
             StringBuilder sb = new StringBuilder(k);
             int length = sb.Length;
             for (int postion = 0; (postion < length) && (sb[postion] == ' '); postion++)
